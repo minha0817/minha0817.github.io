@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Quotes</title>
+</head>
+<body>
+    <div id="container">
+    <!-- clock -->
+        <div class='clock'>
+            <h1 class='date'></h1>
+            <h1 class='time'></h1>
+        </div>
+    <!-- about quote -->
+        <div id="about_quote">
+            <p id = "quote"></p>
+            <p id = "author"></p>
+        </div>
+    <!-- login -->
+        <form id='login-form' class ='hidden'>
+            <input class ='login-box' required maxlength='15' type='text' placeholder='what is your name?'/>
+            <input class = 'login-btn' type="submit" value="Log in"/>
+        </form>
+        <h2 id = 'greeting' class='hidden'></h2>
+    <!-- time & weather -->
+        <div id = 'weather'>
+            <span></span>
+            <span></span>
+        </div>
+    <!-- todo list -->
+        <div id='all-todo'>
+            <form id='todo-form'>
+                <input class = 'todo-box' type='text' placeholder='Write a To-do'/>
+            </form>
+            <ul id = 'todo-list'></ul>
+        </div>
+    </div>
+    <script src="src/login.js"></script>
+    <script src="src/quote.js"></script>
+    <script src="src/background.js"></script>
+    <script src="src/clock.js"></script>
+    <script src="src/weather.js"></script>
+    <script src="src/todolist.js"></script>
+</body>
+</html>
